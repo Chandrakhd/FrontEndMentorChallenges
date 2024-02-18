@@ -20,12 +20,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](../qr-code-component-main/images/projectscreenshot.jpeg)
+![](./images/projectscreenshot.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: ([https://your-solution-url.com](https://github.com/Chandrakhd/FrontEndMentorChallenges/tree/main/Qr-Code-Component))
+- Live Site URL: ([https://your-live-site-url.com](https://chandrakhd.github.io/FrontEndMentorChallenges/Qr-Code-Component/))
 
 ## My process
 
@@ -55,5 +55,4 @@ My future plan is to continue doing the challenges from the fronend mentor and i
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Chandrakhd]([https://www.frontendmentor.io/profile/yourusername](https://www.frontendmentor.io/profile/Chandrakhd)https://www.frontendmentor.io/profile/Chandrakhd)
