@@ -95,6 +95,9 @@ ol {
   display: inline-block;
   width: 1rem;
 } */
+ul li{
+padding: 0 10px;
+}
 ul li::marker {
   color: var(--primary-clr);
   font-weight: 600;
@@ -121,7 +124,8 @@ ul li::marker {
   padding-right: 10px;
   counter-increment: my-counter;
 } */
-
+ol li{
+  padding:0 10px;}
 ol li::marker {
   color: var(--primary-clr);
   font-weight: 600;
