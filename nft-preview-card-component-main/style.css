@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary */
+
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+
+  --VeryDarkBlueMbg: hsl(217, 54%, 11%);
+  --VeryDarkBlueCbg: hsl(216, 50%, 16%);
+  --VeryDarkBlueLine: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--VeryDarkBlueMbg);
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 375px;
+  background-color: var(--VeryDarkBlueCbg);
+  padding: 1.2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  transition: 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0 4px 4rem 5rem hsla(214, 47%, 9%, 50%);
+}
+.profileImg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.profile_title {
+  color: var(--White);
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.profile_desc {
+  color: var(--SoftBlue);
+  margin-bottom: 2rem;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.time p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.time .currency {
+  color: var(--Cyan);
+  font-weight: 600;
+}
+.days {
+  color: var(--SoftBlue);
+}
+
+.user {
+  border-top: 1px solid var(--VeryDarkBlueLine);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.userImg {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+}
+.user p {
+  color: var(--White);
+}
+.creator {
+  color: var(--SoftBlue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--Cyan);
+}
+.attribution a {
+  color: var(--White);
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    border-radius: 16px;
+    margin: 1rem 0;
+  }
+  .profileImg {
+    width: 100%;
+    height: 260px;
+  }
+  main {
+    justify-content: start;
+  }
+}
