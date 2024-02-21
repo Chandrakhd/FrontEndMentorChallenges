@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  /* Primary */
+
+  --Cyan: #2ab2af;
+  --BrightYellow: #c0df34;
+  --lightCyan: #419b9a;
+  /* Neutral */
+  --LightGray: #e5eff5;
+  --GrayishBlue: #98a6bd;
+  --white: #fff;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  background: var(--LightGray);
+}
+.price_grid_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.price_grid {
+  max-width: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.community {
+  grid-column: 1 / span 2;
+  background-color: var(--white);
+  padding: 2.4rem;
+}
+.main_title {
+  color: var(--Cyan);
+  margin-bottom: 1.6rem;
+}
+.community_subtitle {
+  color: var(--BrightYellow);
+}
+.community_desc {
+  color: var(--GrayishBlue);
+  margin: 1rem 2rem 1rem 0;
+  line-height: 1.6;
+}
+
+/* for both monthly and why us common */
+h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.monthlySubscription {
+  grid-column: 1 / span 1;
+  grid-row: 2 / 3;
+  background-color: var(--Cyan);
+  padding: 2.4rem;
+}
+
+.monthly_price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.price {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 400;
+}
+.time,
+.monthly_price_desc {
+  color: var(--LightGray);
+}
+
+.signUpBtn {
+  margin-top: 3rem;
+  display: block;
+  background-color: var(--BrightYellow);
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.whyUs {
+  grid-column: 2 / span 1;
+  grid-row: 2/3;
+  background-color: var(--lightCyan);
+  padding: 2.4rem;
+}
+
+.why_desc {
+  color: var(--LightGray);
+  line-height: 1.4;
+  align-self: end;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  .price_grid_container {
+    height: auto;
+  }
+  .price_grid {
+    grid-template-columns: 1fr;
+  }
+  .monthlySubscription,
+  .whyUs {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+  }
+}
