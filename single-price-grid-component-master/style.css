@@ -49,6 +49,7 @@ body {
 }
 .community_subtitle {
   color: var(--BrightYellow);
+  font-weight: 700;
 }
 .community_desc {
   color: var(--GrayishBlue);
