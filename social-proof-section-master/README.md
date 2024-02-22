@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Chandrakhd/FrontEndMentorChallenges/tree/main/social-proof-section-master)
+- Live Site URL: (https://chandrakhd.github.io/FrontEndMentorChallenges/social-proof-section-master/)
 
 ## My process
 
