@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="preview_card_container">
+      <div class="card">
+        <figure>
+          <img src="images/drawers.jpg" alt="" class="card_img" />
+        </figure>
+
+        <div class="card_info">
+          <h1 class="card_title">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p class="card_desc">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+
+          <div class="card_profile">
+            <div class="profile_info">
+              <img src="images/avatar-michelle.jpg" alt="" class="profileImg" />
+
+              <div class="user_info">
+                <h2>Michelle Appleton</h2>
+                <p>28 Jun 2020</p>
+              </div>
+            </div>
+
+            <div class="social_container">
+              <h3 class="social_title">Share</h3>
+              <ul class="social_links">
+                <li class="social_link">
+                  <a href="#"
+                    ><img src="./images/icon-facebook.svg" alt=""
+                  /></a>
+                </li>
+                <li class="social_link">
+                  <a href="#"><img src="./images/icon-twitter.svg" alt="" /></a>
+                </li>
+                <li class="social_link">
+                  <a href="#"
+                    ><img src="./images/icon-pinterest.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="btn shareBtn">
+              <img src="./images/icon-share.svg" alt="" class="shareIcon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Chandra K</a>.
+    </div>
+
+    <script>
+      const shareBtn = document.querySelector(".shareBtn");
+      const profileinfo = document.querySelector(".profile_info");
+
+      const social_container = document.querySelector(".social_container");
+
+      let socialVisible = false;
+      shareBtn.addEventListener("click", function () {
+        socialVisible = !socialVisible;
+
+        if (socialVisible) {
+          profileinfo.style.display = "flex";
+          social_container.style.display = "none";
+          social_container.style.visibility = "hidden";
+        } else {
+          profileinfo.style.display = "none";
+          social_container.style.display = "flex";
+          social_container.style.visibility = "visible";
+        }
+      });
+    </script>
+  </body>
+</html>
